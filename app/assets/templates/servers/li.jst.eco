@@ -1,0 +1,19 @@
+<div class="server_list form-box">
+  <div class="main">
+    <p><%= @server.get('name') %> <%= @server.get('token') %></p>
+    <button class="edit_server_btn btn">Edit</button>
+    <button class="delete_server_btn btn">Delete</button>
+  </div>
+  <div class="edit">
+    <form class="well form-inline edit_server_form">
+      <input type="text" class="input-small server_name" placeholder="Name" value="<%= @server.get('name') %>" />
+      <button type="submit" class="btn btn-primary update_server_btn">Update</button>
+      <button class="cancel_edit_server_btn btn">Cancel</button>
+    </form>
+  </div>
+  <div class="delete">
+    <p>Confirm delete "<%= @server.get('name') %>"?</p>
+    <button class="btn btn-danger confirm_delete_server_btn">Confirm delete</button>
+    <button class="cancel_delete_server_btn btn">Cancel</button>
+  </div>
+</div>

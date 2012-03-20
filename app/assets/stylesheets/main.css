@@ -1,0 +1,15 @@
+.form-box.adding .main, .form-box.editing .main, .form-box.deleting .main, .form-box .add, .form-box .edit, .form-box .delete {
+  display: none;
+}
+
+.form-box.adding .add {
+  display: block;
+}
+
+.form-box.editing .edit {
+  display: block;
+}
+
+.form-box.deleting .delete {
+  display: block;
+}
